@@ -414,9 +414,8 @@
 
     <script>
         // Backend API Host URL သတ်မှတ်ခြင်း (Local သို့မဟုတ် Online Host URL ပြောင်းလဲနိုင်သည်)
-        const API_BASE_URL = window.location.origin.includes('localhost') || window.location.origin.includes('127.0.0.1')
-            ? 'https://api.trycloudflare.com/tunnel'
-            : window.location.origin;
+        const API_BASE_URL = "https://your-random-subdomain.trycloudflare.com";
+              window.location.origin;
 
         let authToken = localStorage.getItem('hr_token');
 
